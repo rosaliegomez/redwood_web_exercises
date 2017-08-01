@@ -19,6 +19,34 @@
 
 Git workflow
 HTML Overview
-    *Elements are containers
+    *Elements are containers (grammar)
         *Elements can have either more elements or text (text nodes)
-    *Without errors vs valid
+        *Types of elements
+            *Block level -> div, p, h1, h6
+            *Inline elements -> strong, em, span
+            *Void elements -> br, meta, hr
+        *Rules
+            *block within block (valid)
+            *inline within inline (valid)
+            *inline within black (valid)
+            *Are void elements block elements (some of them -> br, hr) 
+            *Block within inline (invalid)
+        *Attributes (describe elements)
+            *examples: class, id, src, href
+            *2 types
+                *Required: a -> href, 
+                *Optional: p -> class
+              
+              
+        Without erros vs Valid
+            *Well-formed documents
+               - Have correc syntax
+            *Mal-formed document
+               - A non-void element must have a closing
+         *Valid document / Invalid document
+            * We need to follow the rules defined by the doctype
+            * https://
+
+            
+   
+    
