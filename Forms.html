@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register with Us</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <!--Some people use inline styling (within headings), but it it not recommended-->
+    <h1>Register with Us!</h1>
+    <form action="https://requestb.in/130ggpi1" method="POST">
+        <label for="email">Email</label>
+            <input id="email" name="Email" placeholder="Email" required>
+        <br>
+        <label for="password">Password</label>
+            <input id="password" name="password" placeholder="Password" type="password">
+    <br>
+        <h2>Please fill out a short bio about yourself.</h2>
+        <br>
+        <label for="bio">
+        <textarea name="Bio" id="bio" rows="15" cols="40"></textarea>
+        </label>
+    <br>
+    <h3>How did you hear about us?</h3>
+        <input name="feedback" value="billboard" type="radio" id="b">
+            <label for="b">Billboard</label>
+
+        <input name="feedback" value="radio" type="radio" id="r">
+        <label for="r">Radio Advertisement</label>
+
+        <input name="feedback" value="internet" type="radio" id="i">
+        <label for="i">Internet Advertisement</label>
+
+        <input name="feedback" value="other" type="radio" id="o">
+        <label for="o">Other</label>
+        <br>
+
+        <label for="browser">What's your favorite browser?</label>
+        <select name="browser" id="browser">
+        <option value="firefox">FireFox</option>
+        <option value="chrome">GoogleChrome</option>
+        <option value="explorer">Internet Explorer</option>
+        </select>
+            <br>
+        <input type="submit" value="Send Feedback">
+        <!--<button>Send Feedback</button> (is another way to submit-->
+    </form>
+    </body>
+</html>
