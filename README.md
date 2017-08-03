@@ -104,5 +104,168 @@ GIT WORKFLOW
      git push origin master
      man git - manual git
             
+   Notes on CSS August 2, 2017 - Afternoon
    
+ Inline styling is discouraged. ie: <h1 style="color: blue; font: 12px">
+ Better is: <style>
+                .fancy-header {
+                    color: blue;
+                    text-decoration: underline;
+                    }
+            </style>
+            </head>
+            <body>
+                <h1 class="fancy-header">I've got style</h1>
+            
+            
+ HOW TO DO CSS:
+ 
+    <link rel="stylesheet" href="forms.css">
+   Link always goes in the <head></head> section.
+   To create notes in CSS, use /**/.  /* make your notes like this.*/
+   In CSS, class selectors have priority over basic selector.  
+   Basic Selector
+   ex:
+    selector{
+        property1; value;
+        property2; value;
+        }
+        
+   Multiple Selectors:
+    ex: if you want several headings to be the same
+    ex: h1, h2 {
+               color: red:
+               }
     
+   Combining Classes
+   Target a group of elements and items with a specific id.
+    EX:
+    .fancy-header
+    
+    .extra-large
+    
+  Use a <class ID> to make something really specific.
+  ex: in css write: #name {
+                        color: green;
+                        }
+       * This makes sure that only the name is green regardless of where it it placed or if it's in a header.    
+    Ids are more specific than classes in CSS
+    
+  Direct- Child
+  If they are both in the same div, there is a direct child and they will be affected, 
+  --UNLESS it is written like this= #personal>h2 {
+                                        color:yellow;
+                                        }
+                                        
+     #top:hover{
+        text-decoration:none;
+        
+        Changes the state of the mouse hoving over a link or other item.
+        
+ **August 3, 2017**
+ 
+ ID selectors take priority over element selectors.  Class selectors are in the middle.
+ 
+ Pseudo-classes
+ Activates when you do a certain action.  Becomes interactive with user interaction.
+ These are:
+ Link
+ Visited
+ Hover
+ Active
+ 
+ These are typically used with anchors.
+ 
+ Properties:
+ Colors
+ Text
+ Font
+ Backgrounds
+ Lists
+ Tables
+ 
+ <section class="hero"
+ 
+ To remove bullets in CSS:
+    ul{
+       list-style-type:none;
+       }
+ body {
+    background-color: #E6ECF0
+    
+ a {
+    color:
+    }
+ 
+ **"Class" and "panel" are comment names for columns in html"
+ 
+ When you see repetition, remove it.
+ 
+ use a comma if using the same rule.
+ 
+ Go to www.w3schools.com --> to find code for "rounded corners" or other css data.
+ 
+ www.caiuse.com --> Come to this site to verify that you can use code from w3schools.
+ 
+ To make a cute "twitter-like" button:
+ 
+ button {
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid #3B94D9;
+    
+  ( to make classes to distinguish the different types of buttons:)
+  
+  .highlight {
+    background-color: #B94D9;
+    color: 3fff;
+    }
+   .regular {
+        background-color: #fff;
+        color: #3B94D9
+            }
+   Then in html file, change it from <button> to <button class="highlight"> or <button class="regular">
+   
+   To change input, as in "search twitter," do the following:
+   
+   input {
+    border-radius: 15 px;
+    border:
+    background-color:
+    background-image: url ("http://via.placeholder.com/10x10);
+    background-repeat: no-repeat;
+    background-postion: right
+  
+  To change navigation links:
+  Make a class:
+  .nav-item {
+            font-weight:
+            color:
+            text-decoration:
+      
+  To make a background image:
+  .hero {
+    /*relative path*/
+  background-immage: url("../imgs/background.jpeg")      
+            
+            
+            Then change in html <a href="#"> to <a href="#" class="nav-item"
+            
+  To make a circle, make the border radius larger, Luis used 100px to make a circle.
+  
+  One more service for images is placeholder.com
+  Monospace fonts are typically used in terminals.
+  Glyph - is how the letter or font will look in the computer.
+  
+  *Using google fonts*
+    Select a font
+    
+ In the META section, put link to the font before the stylesheet.
+  
+ In css, to make a selector that uses all anchor elements, use "a".
+ 
+ #container h1.fancy-header {
+ }
+ This is an example of order placement.
+ 
+ Command + I = Opens the counsole

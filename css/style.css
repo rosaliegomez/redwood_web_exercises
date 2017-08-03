@@ -1,0 +1,17 @@
+h1 {
+    color: darkslategray;
+    text-decoration: underline;
+    font-family: "Helvetica Neue"
+}
+body {
+    background-color: papayawhip;
+    background-size: 50%;
+
+}
+.words {
+    color: darkseagreen;
+}
+ul {
+    font-weight: bold;
+    list-style-type: lower-greek;
+}

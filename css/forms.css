@@ -1,0 +1,21 @@
+body {
+    background-color: antiquewhite;
+}
+.fancy-header{
+    font-style: italic;
+    font-family: Calibri;
+
+}
+.pink {
+    color: hotpink;
+}
+#email {
+    color: deeppink;
+    font-weight: bold;
+}
+#email:hover {
+    background-color: black;
+}
+#bio.container {
+    background-color: darkgreen;
+}
