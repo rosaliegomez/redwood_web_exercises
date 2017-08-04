@@ -184,7 +184,19 @@ GIT WORKFLOW
  Lists
  Tables
  
- <section class="hero"
+ This would look something like:
+ 
+ a:visited {
+    color: purple;
+    }
+    
+    Or 
+    
+ a:hover {
+    background-color: gray
+        }
+     
+     
  
  To remove bullets in CSS:
     ul{
@@ -234,7 +246,7 @@ GIT WORKFLOW
     background-color:
     background-image: url ("http://via.placeholder.com/10x10);
     background-repeat: no-repeat;
-    background-postion: right
+    background-position: right
   
   To change navigation links:
   Make a class:
@@ -246,7 +258,7 @@ GIT WORKFLOW
   To make a background image:
   .hero {
     /*relative path*/
-  background-immage: url("../imgs/background.jpeg")      
+  background-image: url("../imgs/background.jpeg")      
             
             
             Then change in html <a href="#"> to <a href="#" class="nav-item"
@@ -269,3 +281,47 @@ GIT WORKFLOW
  This is an example of order placement.
  
  Command + I = Opens the counsole
+ 
+ To Make a background image in css:
+ .body {
+ background-image:url ("../imgs/background.jpeg")
+ }
+ 
+ If background image won't or can't load, then the background color will show.
+ 
+ 
+ THis is an example of a pseudo-file:
+ a:active {
+    color: red;
+ }
+ 
+ 
+   ** fyi, ID's should not be numbers.**
+   
+ **August 3, 2017 - Notes on Box Model:
+ 
+ How to creat boxes:
+ In body (of HTML):
+ 
+ <div id="box1" class="boxes"></div>
+ 
+ Boxes need a value to exist. This means it will not show much unless it has a value and a border.
+ You can style in the html style section located in the <head></head>, but it is better to put in the css. 
+ 
+ 
+ in <style>
+    .boxes {
+        width: 200px
+        height:
+        background-color:
+        padding:
+        border:
+        margin
+    
+    #box1{
+        margin-bottom: 5px;
+        
+       
+ __________________________________________________________________________
+ 
+ Friday August 4, 2017

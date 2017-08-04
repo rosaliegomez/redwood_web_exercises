@@ -1,12 +1,4 @@
+*.iml
+.idea
+**/.DS_Store
 
-.idea/inspectionProfiles/
-.idea/modules.xml
-.idea/redwood_web_exercises.iml
-.idea/workspace.xml
-/.idea/css_selectors.html
-!/.idea/css_selectors.html
-.DS_Store
-IMG/Subtle Patterns _ Free textures for your next web project _ Page 8_files/
-IMG/green.htm
-css/selectors.css
-.idea/css_selectors.html

@@ -1,8 +1,12 @@
-h1 {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+header{
     color: darkslategray;
     text-decoration: underline;
-    font-family: "Helvetica Neue"
+    font-family: "Helvetica Neue";
+    text-align: center;
 }
+
 body {
     background-color: papayawhip;
     background-size: 50%;
@@ -11,7 +15,19 @@ body {
 .words {
     color: darkseagreen;
 }
-ul {
+ul li {
     font-weight: bold;
     list-style-type: lower-greek;
+    text-decoration: double;
+}
+
+table{
+        font-family: Arial
+}
+
+td, th {
+    padding: 10px;
+}
+a.hover {
+    color: deeppink;
 }
