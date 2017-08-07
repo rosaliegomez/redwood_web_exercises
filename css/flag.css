@@ -1,0 +1,45 @@
+div{
+    position: relative;
+}
+
+.red{
+    background-color: red;
+    width: 500px;
+    height: 75px;
+    position: absolute;
+
+}
+.left-2 {
+    background-color:red;
+    width: 200px;
+    height: 130px;
+    margin: 0px;
+    position: absolute;
+    bottom: 82px;
+
+}
+.right-2 {
+    background-color: red;
+    width: 200px;
+    height: 130px;
+    left: 308px;
+    position: absolute;
+    bottom: 82px;
+    margin: 0px;
+
+}
+.midleft {
+    background-color: red;
+    width: 70px;
+    height: 100px;
+    bottom: -18px;
+    position: absolute;
+}
+.midright {
+    background-color: red;
+    width: 70px;
+    height: 100px;
+    bottom: -18px;
+    position: absolute;
+    left: 438px;
+}

@@ -321,7 +321,146 @@ GIT WORKFLOW
     #box1{
         margin-bottom: 5px;
         
+  use the following to select images within boxes or div(s).
+  
+  .boxes>img {
+    position: absolute;
+    bottom: 60px;
+    }
+    
+    Make sure that position is indicated within classes.  If it is relative to something
+    else, make sure its listed as relative.
        
  __________________________________________________________________________
  
  Friday August 4, 2017
+ 
+ 1. A quick note on box sizing
+    border-box vs content box
+    
+    "CSS 3 box model" 
+ On some style sheets, box-sizing: border-box; 
+ may be used but does not change the height/ width.  
+    
+ In the content box option, the padding affects the overall size.  
+ 
+ 
+ 
+ 2. positioning
+ Can be very complicated.  Only use one type, since it can get very confusing.
+ 
+ 
+   *floats - Has ability to break free and layer on top.  Also similar to Tetris.  
+   Each element can be positioned individually.  
+   
+  ** If you add a float to a "block-element" then it doesn't technically act like a block element. 
+  Usually apply "clear:" to last one.
+  Floating can be very confusing, and frameworks are becoming more popular.
+   **Luis recommends using a red border at first to distinguish positioning. 
+    relative - Using relative positioning is alot easier.  you can use right: left: top: and bottom: followed by a
+    number to show where a certain object goes. Negative numbers may also be used. 
+   
+   
+   absolute positioning - if you want to use absolute positioning, 
+   
+   use something similar to the following:
+   position: absolute;
+   left: 10px;
+   top: 0px;
+   
+ Distinguish whether box or shape or item is RELATIVE or ABSOLUTE!
+ This can be done in the formatting section of the css page that you wrote the other 
+ basics such as height and width.   
+ 
+ With relative positioning, it may overlap images and it can appear to be lost. :(
+   
+ (if you use -)
+ 
+ 
+ fixed positioning
+ -Tries to apply relating to the browsing window.
+ -Doesn't matter who the parent is.
+ 
+ 
+ Instead of choosing "bottom: 60px," you can use "top:-40" or something similar using
+ a negative number.
+ 
+ ##CSS Notes
+ 
+ The unit of work in CSS is a rule.
+    -It has one or several selectors.
+    - Can have one or more declarations that affect properties and values.
+ *selector, properties, 
+ 'selector {property: value;}'
+ 
+ Types of selectors
+    *elements, classes, ids, pseudo-selector
+    *Combinations 
+    
+ There are 3 ways to include CSS in a page:
+    1. Inline: Using the style attribute.
+    2. Embedded. using the "style element"
+    3. External. using the 'link' element pointing to an external '.css'file.
+ 
+ Types of positioning:
+    -static is the default positiioning
+    -absolute and relative- mostly for images
+    - fixed - usually for main navigation bars
+    -float is mostly used to create columns.
+ There are 3 main font families:
+ 
+ Serif, Sans serif, and monospace
+ 
+ How to use Google fonts
+    1. Select a font.
+    2. 
+
+Fundamental blocks of websites include:
+header, footer, main, block.
+
+So the first step is to
+1. analyze duplication
+2. Find all variations
+
+There are several approaches to CSS
+
+OOCSS (nicole SUllivan)
+   Separate container and content.
+   Main thing is to separate elements from container.
+SMACSS (Jonathan Snook)
+    Base (Reset)
+    Layout (Positioning) like columns
+    Module (lke in OOCSS)
+    State - like disabled elements
+    THeme - the only part that is optional
+    
+    (Involves separating modules)
+    
+    
+BEM (Yandex)
+
+   Block - Entity - Meaningful on its own (module in OOCSS). 
+            Header, menu, input
+   Element
+     - Part of a block semantically tied to its parent.  Menu-item, checkbox-caption, header-title
+        
+  Modifier
+  Represents a change in appearance or behavior (state in SMACSS). 
+  disabled, highlighted, checked,  and fixed)
+             
+  IE. you can include "Base-type" rule to change the body and "Menu or nav-menu" to 
+  change the menu.
+  (Union of the two other) 
+  
+  In this, go to HTML and you can select Class as something similar to "button button-regular"
+  Or "button button-highlighted" to should that there is a regular button class and a special one.
+  Between "button" and "button-highlighter"  it will accept the last stated one 
+    
+   
+   
+   1. Base or reset rules
+   2. modules rules (as they are usually positioned in the page.
+        1. Blocks
+        2. elements 
+        3. states
+   3. Layout (column or grid system)
