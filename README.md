@@ -69,7 +69,7 @@ HTML Overview
     (When we make requests, it only has a header, no body)  
    -Body
          -THe real content
-        (These two represent partf of a message)
+        (These two represent part of a message)
         (Git Pull origin master - is the command that pulls or downloads changes made(possibly by other users))
     Forms and form elements
     ("<form action> shows what server to send the info do
@@ -464,3 +464,239 @@ BEM (Yandex)
         2. elements 
         3. states
    3. Layout (column or grid system)
+   
+_______________________________________________________________
+
+To create margins, you can set width: to 960px and set margin to 0 auto, and this centers
+the text.  THis only works for the body.  
+
+Fixed layouts do not change when the window is minimized.
+   
+ If you change it to "fluid" then it moves smaller when the window is reduced.
+ If you put width to :80%
+ and other columns to :20% it changes and comes fluid. 
+ 
+ You can use "media screen" for different screen sizes.
+ 
+ /*Ex : for screen sizes 500px and up*/
+ @media screen and (min-width:500px) {
+    selector {
+    property: value;
+    }
+   }
+   
+   Min and Max are 
+
+screen sizes between 960 px and 1200px
+@media screen and (min-width:960 and max width: 1200px)
+
+Media queries can have a bunch of rules
+
+Viewport
+in <head></head>
+write meta name="viewport" content="width=device-width, initial scale=1" 
+print.css can be used to print the code.
+
+
+Put "repository"
+
+**August 8, 2017**
+
+1. Complete Media queries exercise
+2. Review of the solution
+3. How to create a simple grid system
+
+media Queries Exercise
+
+note: there are not many containers, so it may work a little differently.
+
+First, add viewport to <meta> tag, and link to css.
+
+(commit) (prepare the HTML page for styling)
+
+In css,
+
+Wireframe is an idea that comes before formatting, focuses on a general layout 
+(without colors, sizes, etc).
+
+Lately most developers and designers focus on mobile design first.
+
+Since there are only 2 screen sizes asked for, there should only be one (1) media 
+query,
+
+/* Reset Styles*/
+
+html, (if you want to use the full size of the page, start with "html")
+html, body {
+    margin: 0 (This is very important if you are trying to make things align)
+    height: 100%
+    width: 100%
+    box-sizing: border-box;
+    }
+
+body {
+    display: block;
+    padding: 5px;
+    
+h1 {
+    
+.alert-info {
+    background-color: lightblue;
+    border: 2px solid lightgrey;
+    color: #000; ---> Wont work!
+    text-decoration: none; ----> won't work!! 
+    }
+    
+.alert-info > a { 
+    color: #000;
+    text-decoration: 1em;
+    text-align: center; ---> "text-align wont work with block elements, only inline!!"
+   
+   }
+   
+   .nav-links {
+   padding: left
+ .nav-links li {
+    
+   background-color: lightgray;
+   padding: 1em;
+   text-align: center;
+   list-style-type: none
+   margin-bottom:
+   
+   .header-img>img {
+   width: 100%;
+   
+   
+   .subsection: {
+    font-style: italic}
+   
+   
+   ** TO HIDE SOMETHING:
+   use 
+   hide on mobile: {
+   display: none 
+
+   }
+   
+   ** TO MAKE LIST IN A ROW**
+   
+   li { 
+   display: inline-block;
+   }
+   
+   To make a COLUMN, USE :
+   float: (try to float to the left always)
+   and 
+   width:
+   
+   This can be used with text as well.
+   
+   A column that takes up 1/3 on the right, would be written as:
+   
+   .main {
+    float: left;
+    width: 67%
+    }
+   
+   
+ 
+ **August 8, 2017 Notes continued**
+ 
+ Grids
+ A generalization to create layouts based on columns.
+ 
+ - They are generally 12 columns.
+ - We have several general concepts.
+ 
+    Container- will define the maximum width of the blocks in the page. (Example
+    was photo of giant cat.)
+    Can use something like the following in css:
+    
+    .container {
+    width: 90%
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+    
+    **in html you can add a <div class of "column-one-third" before the <p> paragraph starts.
+    
+    .column-one-third {
+        float: left;
+        width: 33%
+        }
+        
+    .row {
+        width: 100%
+        overflow: auto;
+        }
+        
+        
+        
+    
+    Row -   It's a container for columns. (Similar to Twitter example)
+    Columns - Are usually elements floating with a specific width based on percents. 
+    (We should at this moment be most familiar with this one.)
+    
+ In HTMl, if you have several divs that you intend to be a column together, you
+ can create 
+ 
+ 
+ The ".row after" works on more browsers that the .row at fixing the rows of different
+ columns to be aligned.  (Without it the rows can appear to start at different heights.)
+ .row after {
+    content: "";
+    display: table;
+    clear: both:
+    
+ Wed developer tool bar
+ 
+ @media-screen and (min-width: 360px) {
+  /*the is going to be applied to small screens and bigger*/
+  float: left;
+  width: 100%
+  
+  
+  Most framers use 5 types:
+  xs
+  x
+  m
+  l
+  xl
+  
+  <div class="column-one-third column-three-thirds-medium">
+  
+  .offset-one-third {
+    margin-left: 33%;
+    }
+    "offset affects empty columns"
+   
+   
+   **August 9, 2017**
+   
+   Review of grid system exercise
+   
+   Use div.container as a class since it is gray.  
+   
+   You can use div.row*5 to quickly create 5 rows.
+   
+   <div class="row>
+    <div class="column">1/2</div>
+    
+    if you are in html and you want to go to your link, you can hit: COMMAND + B (while the link is highlighted
+    
+    padding can affect size.
+    
+    first thing you do when you have a grid system, is put it in a container.
+   
+   
+   How to use bootstrap:
+   
+   Is a css framework.  
+   There are several ways to set up.
+   Easiest way is CDN
+   
+   Copty the first link tag and add it to the head of your document
+   copy the only scrip tag and add it before the end of your body element
+   
+    

@@ -1,0 +1,52 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+    padding: 10px;
+
+}
+.column {
+    float: left;
+    border-width: 1px;
+    box-sizing: border-box;
+    font-family: Calibri;
+    border-color: black;
+
+}
+.one-half {
+    margin: 0 auto;
+    min-width: 50%;
+    float: left;
+    align-content: center;
+    background-color: red;
+    border-color: white;
+
+}
+.one-third {
+    min-width: 33.3%;
+    float: left;
+    align-content: center;
+    background-color: orange;
+
+}
+
+.one-fourth {
+    min-width: 25%;
+    float: left;
+    align-content: center;
+    background-color:yellow;
+
+}
+
+.one-eighth {
+    min-width: 12.5%;
+    float: left;
+    align-content: center;
+    background-color: green;
+
+}
+
+@media screen and (max-width:500px) {
+    body {padding:0px;
+}}
