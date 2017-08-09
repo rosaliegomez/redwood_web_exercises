@@ -1,0 +1,18 @@
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+#cheese {
+    width: 100%;
+}
+
+
+
+
+.panel-footer {
+    float: right;
+    width: 33%
+    box-sizing: border-box;
+}
+
