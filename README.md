@@ -696,7 +696,59 @@ h1 {
    There are several ways to set up.
    Easiest way is CDN
    
-   Copty the first link tag and add it to the head of your document
+   Copy the first link tag and add it to the head of your document
    copy the only scrip tag and add it before the end of your body element
    
-    
+ **August 10, 2017**
+ Navbar of Bootstrap is usually the biggest section of code.
+ Usually the main class will tell you padding and second will tell you the colors.
+ example: <navclass="navbar navbar-default" the first nav bar deals with padding and the second deals with colors.
+ Since div class is "container-fluid" you would use percentage.
+ 
+ Don't remove "navbar-header" because that is what makes it responsive.
+ Don't change first three things. 
+ You can start changing after "collapse navbar-collapse"
+ 
+ There is "navbar-left" and "navbar-right."
+ 
+ In bootstrap, hero class is called "jumbotron."  
+  ie.  
+  in html:
+  
+  .hero-pizza {
+  background-image: url("http....com");
+  
+  .hero-pizza-title {
+    text-aline: ...
+    background-color:...
+    padding: ...;
+    opacity: (makes the background transparent.)
+  }
+  
+  Use "em" instead of pixels to size things when you want it to move.  
+  
+  You can use (in CSS)
+  
+  background-size: cover;
+  
+  to make the full image to fit within the page.
+  
+  When you look at panels, the first panel affects size and padding, and the panel-default, changes the colors. 
+ 
+ 
+ Make a live template
+ <div class=panel panel info
+ 
+ <div class= panel-heading></div?
+ 
+   <div class="panel-body"
+   
+   **To do a grid in bootstrap**
+   
+   but in <div class="col-xs-6">
+   
+   'col-xs-3' means three columns for extra small devices and bigger (or all devices)
+   
+   or you can put <div class='col-xs-12 col-md-4'>
+   
+   Means that 

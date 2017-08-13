@@ -1,18 +1,58 @@
+html body {
+    margin: 20px;
+}
 h1 {
     position: relative;
     text-align: center;
+    background-color: #F9F9F9;
+    opacity: .75;
+
+}
+.panel-default>.panel-heading {
+    background-color: lightblue;
+    margin: 0 auto;
+
+    border: 1px;
+}
+ul li {
+    list-style-type: none;
 }
 
 #cheese {
     width: 100%;
 }
 
-
-
-
 .panel-footer {
+    text-align: right;
     float: right;
-    width: 33%
-    box-sizing: border-box;
+    margin-bottom: 0;
+    width: 100%;
+}
+.btn-primary {
+    text-align: right;
+    float: right;
+    margin-bottom: 0;
+}
+.btn-default {
+    text-align:right;
+    float: right;
+}
+
+    background-color:#F5F5F5;
+}
+
+.panel {
+    margin-bottom: 0;
+    float: right;
+    text-align: right;
+    width: 100%
+}
+.panel-body {
+    margin-bottom: 0;
+}
+.btn-group>.button {
+    float: right;
+    text-align: right;
+    width: 100%;
 }
 
