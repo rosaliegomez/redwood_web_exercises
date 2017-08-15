@@ -752,3 +752,323 @@ h1 {
    or you can put <div class='col-xs-12 col-md-4'>
    
    Means that 
+   
+   **August 14, 2017**
+   
+   
+   Git Branches
+   
+   Commit - has several parts  
+   an author,
+   a message,
+   a commit ID.
+   
+   Master is the main branch in github.
+   "head" is considered the last commit or most latest.
+   
+   Feature Branch
+   
+   Reasons to "commit:"
+   New feature 
+   Removing errors
+   
+   If you want to remove branch, you can (in the terminal) type "git branch -d 'name of variable'"
+   
+   New method of pushing from now on: 
+   1. Feature branch for the lesson/exercise
+   2. commit changes in that new branch
+   3.  merge with master
+   4. push to master
+   
+   **Javascript**
+   
+   var name = "codeup"
+   
+   Example of a statement.
+   
+   Statements
+    variable declaration " or var identifier"
+        Identifier Cannot begin with a number(but can be included after beginning)
+        Cannot include spaces
+        Dashes are not allowed
+        but Underscores are.
+        
+    
+ Assignment
+    'identifier +variable'
+    
+  Variables can change.
+        
+  Constants stay the same, they cannot change type or value.
+  example 
+  const pi = 3.145;
+  
+  if you type pi = 3.1 
+  you will receive an error message. 
+  
+  "//" is considered a single-line comment
+  
+  /*  is for multiple line comments */
+  
+  Boolean operators are &&, ||, and !
+  
+  modulus %
+  
+  The remainder.  
+  
+  6 % 4 = 2
+  
+  3 % 4 = 3
+  
+  Difference between a statement and an expression:
+  
+  An operator and an operand.
+  
+  Operand is 1 or ...
+  Operator is a plus sign.  
+  
+  Statement is a combination of expressions.  
+  And it ends with a ; or a semi-colon.
+  
+  + operator is considered an overloaded operator because it can work on strings
+  and addition.  
+  
+  Concatenate 
+  
+  '\' has special meaning. 
+  example if you want to write a single quote. you can type
+  
+  'here is a single quote -->'<--'
+  but you have to write 'here is a single quote -->\' and it works'
+  
+  '\n' shows that it's a new line.  
+  
+  you need to type two backslashes to get get one.  
+  
+  If you want four backslashes, you need to type 8!!
+  
+  
+  *String functions will replace the value but will not permanently chance the variable.  
+  
+  
+  Exercise Notes from Monday Afternoon
+  
+  var sample = "Hello Codeup"
+  To permantantly change to uppercase
+  sample = sample.toUpperCase()
+  
+  sample.toUpperCase; (is not permanent)
+  
+  sample + 'students';
+  adds students to the back.
+  
+  sample.replace('Students','Class');
+  sample = sample.replace('Students','Class')
+  
+  var indexofCodeup = sample.indexOf('CODEUP')
+   
+  Use naming convention - called camel case.
+  
+  This means write The Little Mermaid as littleMermaid.
+  
+  
+  var littleMermaid = 3
+  var brotherBear = 5
+  var hercules = 1
+  
+  var totalDays = littleMermaid + brotherBear + hercules
+  
+  var grandTotal = totalDay * 3
+  
+  grandTotal = 27
+  
+  Next problem.....
+  
+  var googleRate = 400
+  var amazonRate = 380
+  var facebookRate = 350
+  var googleHours = 6
+  var amazonHours
+  .............incomplete
+  
+  var paycheck = googleHours * googleRate + amazonHours * amazonRate + facebookHours * facebookRate =
+  7420
+  
+  var classFull = False
+  var scheduleHasConflicts = false
+  var canEnroll = !classFull && !scheduleHasConflicts;
+  
+  However... try not to make variables such as "classNotFull" since it makes things more
+  difficult to have a negative in the variable.
+  
+  Next problem...
+  
+  // discount is applied if brought more than two items or they are a premium member and the
+  offer has not expired.
+  
+  (It's a good idea to make notes in the code)
+  
+  var numberOfItemsBought = 100
+  var is PremiumMember = false
+  var offerIsExpired = false
+  
+  numberOfItemsBought >2 || idPremiumMember) && !offerIsExpired
+  
+  
+  var username = 'codeup';
+  var password = 'notastrongpassword';
+  Create a variable that holds a boolean value for each of the following conditions:
+  
+  the password must be at least 5 characters
+  the password must not include the username
+  the username must be no more than 20 characters
+  neither the username or password can start or end with whitespace
+  
+  In console type:
+  
+  var username = 'codeup';
+    var password = 'notastrongpassword';
+    
+  var passwordIsLongEnough = password.length >=5
+  var passwordContainsUsername = password.indexOf(username) !==-1
+  
+  
+  (This checks if password contains the username.)
+  
+  
+  var usernameIsTooLong = username.length > 20;
+  var UsernameHasWhiteSpace = username !== username.trim()
+  var passwordHasWhitespace = password !== password.trim()
+  car hasWhiteSpace = passwordHasWhiteSpace || usernameHasWhiteSpace
+  
+  
+  This would look like 
+  'codeup' !=='
+  "true"
+  
+  To use java in html, put in a <script> tag in the body.
+  
+  
+  
+  //inline javascript inside of script tags
+  
+  USe
+  <script>
+  "use strict";
+  console.log('hello redwood');
+  console.log('this is inline JS');
+  
+  </script>
+  <script src = "http://js/my_javascript_script
+  
+  Every file from now on should read "use strict". 
+  
+  Two ways to use javascript is internal (in the html page) and external a separate 
+  one.  In external sheet, still write, "use strict"
+  
+  *User interaction*
+  alert (shows a message
+  confirm (acts as a boolean)
+  prompt ('What is your favorite pizza topping?') (Gets text input from the user;);
+  
+  you can store that in a variable.
+  car toppingToAdd = prompt('What pizza topping should we add?')
+  toppingToAdd "anchioves"
+  
+  ** August 15. 2017 **
+  
+  to make new branch... "-b.."
+  
+  in example...
+  
+  alert('ready for action')
+  to make sure its linked.
+  
+  console.log('before the if statement')
+  
+  if() {
+    console.log('body of the if statement');
+  }
+  
+
+  
+  
+  if (true)
+  it will show...
+  if(false)
+  nothing will show. 
+  
+  } else {
+    console.log('condiiton evaluates to false');
+    colsole.log('else branch')
+  }
+  
+  var numberOfTimesIVotedForTheSeatingChart = 1;
+  
+  if (numberOfTimesIVotedForTheSeatingChart ===1) {
+    console.log('good job');
+    } else if (numberOfTimesIVotedForTheSeatingChart >1 && numberOfTimes... <99 {
+        console.log('what do you think you are doing?');
+     } else if (numberOfTimesIVotedForTheSeatingChart > 100 {
+             console.log('You must have written a script to break the site');   
+    } else if (number of... === 0) {
+        console.log(why did you not vote?);
+        }
+        console.log(after the if statement.
+        
+        
+    Loosely is ==
+    Strictly is ===
+    Use Strictly most of the time. 
+    
+    Usually anything inside of curly braces is indented one time.
+    
+    
+    
+    
+   Ternary Operator
+   
+  Statements not expressions.
+  Expression has operators and operands.
+  
+  Ternary operator makes it so that you can make an If/Else statement
+  as an expression.
+  
+  condition ? 'value if true' : 'value if else
+  
+  Var message = (1>2) ? 'math is broken' : 'everything is fine';
+  
+  console.log(message)
+  
+  
+  Example:::
+  
+  reg:
+  
+  var message;
+  if (success) {
+    message = "operation as successful.":
+    }else {
+        massage = "oops, something went wrong.";
+        }
+        
+  Rewritten with a ternary operator
+  
+  var message = (success) ? 'operation was successful.' " 'Oops, something went wrong:'
+  console.log(message);
+  
+  **Message can be any variable**
+    
+  
+  
+Switch (variable we want to look at) {
+    case a literal value;
+    break;
+    }
+   
+   Don't fall through intentionally.  Meaning... don't forget to use "break"
+   Switch case is easier to understand. 
+   
+   example:
+    
+var 
