@@ -4,7 +4,14 @@
 // This creates two variables:
 //     one with the colors of the rainbow, and another with a single randome
 //     another with a single random color value
+// 1. variable declaration. 2. assignment.
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+// Neither of these are expressions.
+// 1. variable declaration 2. Assignment
+// After the '=' is considered the assignment part.
+// If you see arithmetic operation, then it's an expression.
+// a function call is an expression IF it returns a value
 var color = colors[Math.floor(Math.random()*colors.length)];
 
     // TODO: create a case statement that will handle every color except indigo and violet
@@ -59,14 +66,17 @@ switch (color) {
 var cameronsTotal = 180;
 var ryansTotal = 250
 var georgesTotal = 320
+var minSale = 200;
 
-var message = (cameronsTotal > 200) ? (cameronsTotal - (cameronsTotal * .1) ) : "No discount applies";
+var message = (cameronsTotal > minSale) ? (cameronsTotal - (cameronsTotal * .1) ) : "No discount applies";
 console.log(message);
 
-var message = (ryansTotal > 200) ? (ryansTotal - (ryansTotal * .1)) : "No discount applies."
+var message = (ryansTotal > minSale) ? (ryansTotal - (ryansTotal * .1)) : "No discount applies."
 console.log(message);
-var message = (georgesTotal > 200) ? (georgesTotal - (georgesTotal * .1)) : 'no discount applies'
+var message = (georgesTotal > minSale) ? (georgesTotal - (georgesTotal * .1)) : 'no discount applies'
 console.log(message);
+
+
 
 
 var flipACoin = Math.floor(Math.random()* 2)

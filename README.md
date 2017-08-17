@@ -1072,3 +1072,126 @@ Switch (variable we want to look at) {
    example:
     
 var 
+
+
+** August 16, 2017 *
+
+Git fetch is a git download.  downloads change from the remote without applying them to the mty local repo
+
+git stash saves work in progress.
+
+
+(taken from switch js exercise)
+// 1. variable declaration. 2. assignment.
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+// Neither of these are expressions.
+// 1. variable declaration 2. Assignment
+// After the '=' is considered the assignment part.
+// If you see arithmetic operation, then it's an expression.
+// a function call is an expression IF it returns a value
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+console.log(color); // Not an expression
+In this example, color is a string.  But...Color is an expression. 
+
+These are considered sequectual statements. 
+
+Switch (color) { is a statement.
+    case "red":
+        console.log ('color red');
+        
+Cameron's Case
+
+var sale = 190;
+var minSale = 200;
+
+if (true) {}
+
+if (sale>minSale) {
+    Then the discount applies
+    and the rest of the functionality to give discounts
+    }
+    
+ Turnary Operator - is whatever type you like....
+ 
+ 
+ ...
+ 
+ Loop
+ 
+ sequential -> if (condition) ) {} -> while (condition) {}
+ 
+ // print the number from 1 - 5
+ 
+ var limit = 5;
+ var counter = 
+ 
+ //go to
+ 
+ console.log (1)
+ console.log (2)
+ console.log (3)
+ console.log (4)
+ console.log (5)
+ 
+ Then you can choose:
+ 
+  console.log(counter);
+  counter++;
+  console.log(counter);
+  counter++;
+  console.log(counter);
+  counter++;
+  console.log(counter);
+  counter++;
+  console.log(counter);
+  counter++;
+  
+  while  (counter <= limit) {
+    console.log(counter);
+    counter++
+    }
+    
+    
+    If you want to do only once then use do while...
+    but if more use while.  
+    
+    for (
+        counter = 1; //1. first time (once)
+        counter <= limit; //2. should i continue?
+        counter++ //4. increment -> go to condition
+        ) {
+        console.log(counter); // 3. body
+        }
+        
+ Best practces are to include "variables" at the top of the code.
+ 
+ 
+ if (counter === 3) {
+    console.log('you reached the number 3");
+    console.log("I will stop the app");
+    break;
+    }
+    
+ Do - while and while are better used when you're unsure of the number of times 
+ it will be looped.  (ie. doesn't necessaryily use i++ or i--). 
+ 
+ 
+ **August 17**
+ 
+ .repeat works to repeat.
+ 
+ .toString() will create a string out of numbers.  
+ 
+ 
+ to make a function:
+ 
+ function printName() {
+ cosole.log(firstName + " " + lastName);
+ }
+ 
+ "argument is the number portion or info put in the () following an established function.
+ 
+ Global scope : 
+ Function Scope: variable has to be inside of the function.
