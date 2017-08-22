@@ -53,4 +53,5 @@
         console.log(shoppers.name.amount - (shoppers.name.amount * .1));
     };
         shoppers.total();
+        // Fer comment
 })();
