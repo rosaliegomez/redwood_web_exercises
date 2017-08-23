@@ -1195,3 +1195,35 @@ if (sale>minSale) {
  
  Global scope : 
  Function Scope: variable has to be inside of the function.
+ 
+ ** August 22 **
+ 
+ Object properties can either be written:
+ 
+ book["title"], book["author"]
+ or 
+ book.title, book.author
+ 
+ **August 23**
+ 
+ Arrays arrays are objects.
+ Functions are objects.  Math is a function that an be used as an object.
+ Almost everything in javascript is an object.
+ 
+ 
+ Math.random();
+ 
+ Math.round(20.49)
+ Math.round(20.5)
+ Rounds to nearest number....
+ 
+ math.floor- Will always choose the smaller number.  45.95 = 45.
+ -45.95 = -46
+ 
+ Math.ceil(.95) = 1
+ Math.ceil(7.04) = 8
+ 
+ Math.pow(2,16); 
+ 
+ 
+ 

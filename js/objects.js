@@ -49,9 +49,29 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-    shoppers.total = function() {
-        console.log(shoppers.name.amount - (shoppers.name.amount * .1));
-    };
-        shoppers.total();
-        // Fer comment
+
+    for (var i = 0; i < shoppers.length; i++) {
+        var shopper = shoppers[i];
+        console.log(buildReceipt(shopper));
+    }
+
+    shoppers.forEach(function (shopper){
+        console.log(buildReceipt(shopper));
+    });
+
+    function buildReceipt(shopper) {
+        var discount = 0;
+        var total = shopper.amount;
+
+    if (shopper.amount > 200){
+            discount = .1);
+            total = shopper.amount - shopper.amount * discount;
+        }
+        return shopper.name + " has to pay $" + shopper.amount
+            + ", it has a discount of $"
+            + ", the total to pay after the discount is $"
+            + total;
+}
+
+
 })();
