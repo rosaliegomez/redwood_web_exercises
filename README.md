@@ -1225,5 +1225,15 @@ if (sale>minSale) {
  
  Math.pow(2,16); 
  
+** August 24 **
+
+
+.getElementsByTagName means the elements within the <> ie <form>.
+snake case
+camel case
+or dot notation
+train case
+
+ 
  
  

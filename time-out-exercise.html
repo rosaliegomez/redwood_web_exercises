@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeout</title>
+</head>
+<body>
+<!--Create a function that asks the user if they are still active in the webpage every 45 seconds, use a confirm dialog to get the users input to decide if they want to stay in the same page, if they click cancel, redirect them to http://google.com. if they click accept leave them in the same page.-->
+<script>
+    (function() {
+        "use strict";
+
+        var delay = 4500;
+        var interval = 1000;
+        var count = 5000;
+
+        var timeoutId = setTimeout (timeoutId, delay);
+
+        function timeoutId() {
+            var r = confirm('are you still alive?');
+            if (r == true) {
+                alert("ok good");
+            } else {
+                window.location = 'http://www.google.com';
+            }
+        } count++;
+
+        timeoutId();
+
+    })();
+</script>
+</body>
+</html>
