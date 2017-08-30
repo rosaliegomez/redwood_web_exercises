@@ -8,40 +8,59 @@
             width: 481px;
         }
     </style>
+    <title>Kay's Country Kitchen</title>
 </head>
 <body>
 <h3>My Google Maps Demo</h3>
 <div id="map-canvas"></div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Kh8eEhfm84gnt6eqbhn5PPrsOoENp6A">
 </script>
-<script type ="text/javascript">
-        "use strict";
+<script type="text/javascript">
+    "use strict";
     var map;
-    (function() {
+    (function () {
         var mapOptions = {
-            zoom: 19,
+            zoom: 10,
             center: {
                 lat: 34.9485288,
                 lng: -120.4473257
             },
-            mapTypeId: google.maps.MapTypeId.SATELLITE
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var kays = {lat: 34.8652647, lng: -120.4477035};
-        var marker = new google.maps.Marker({
-            position: kays,
-            map: map
-
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        var contentString = '<div>' +
+            '<h2>Best waffles EVER!' +
+            '</h2>' +
+            '<p>Hands down one of the BEST breakfast joints in all of California!!' +
+            'No exaggeration.  Very friendly service, always packed, excellent food.</p>' +
+            '</div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
         });
-    var address = "135 E Clark Ave, Orcutt, CA, 93455";
+        var address = "135 E Clark Ave, Orcutt, CA, 93455";
         var geocoder = new google.maps.Geocoder();
-        geocoder.geocode({"address" : address}, function(results, status){
-            if(status == google.maps.GeocoderStatus.OK){
+        geocoder.geocode({"address": address}, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
             } else {
                 alert("Geocoding was not successful - STATUS:" + status);
             }
         });
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+        var kays = {lat: 34.8652647, lng: -120.4477035};
+
+        var marker = new google.maps.Marker({
+            position: kays,
+            map: map,
+            animation: google.maps.Animation.BOUNCE,
+        });
+
+
+        marker.addListener('click', function () {
+//            map.setZoom(20);
+//            map.setCenter(marker.getPosition());
+            infowindow.open(map, marker);
+        });
     })();
 
 </script>
