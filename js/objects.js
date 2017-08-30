@@ -50,28 +50,40 @@
         {name: 'George', amount: 320}
     ];
 
-    for (var i = 0; i < shoppers.length; i++) {
-        var shopper = shoppers[i];
-        console.log(buildReceipt(shopper));
+
+    function buildReceipt(){
+        if(shoppers[1].amount > 200){
+            var discount = .1;
+            console.log(shoppers[1].name, "has to pay", shoppers[1].amount - (shoppers[1].amount * discount))
+        } else{
+            console.log("No discount applies.")
+        }
+
     }
 
-    shoppers.forEach(function (shopper){
-        console.log(buildReceipt(shopper));
-    });
 
-    function buildReceipt(shopper) {
-        var discount = 0;
-        var total = shopper.amount;
-
-    if (shopper.amount > 200){
-            discount = .1);
-            total = shopper.amount - shopper.amount * discount;
-        }
-        return shopper.name + " has to pay $" + shopper.amount
-            + ", it has a discount of $"
-            + ", the total to pay after the discount is $"
-            + total;
-}
-
+//     for (var i = 0; i < shoppers.length; i++) {
+//         var shopper = shoppers[i];
+//         console.log(buildReceipt(shopper));
+//     }
+//
+//     shoppers.forEach(function (shopper){
+//         console.log(buildReceipt(shopper));
+//
+//     });
+//     function buildReceipt(shopper) {
+//         var discount = 0;
+//         var total = shopper.amount;
+//
+//     if (shopper.amount > 200){
+//             discount = .1);
+//             total = shopper.amount - shopper.amount * discount;
+//         }
+//         return shopper.name + " has to pay $" + shopper.amount
+//             + ", it has a discount of $"
+//             + ", the total to pay after the discount is $"
+//             + total;
+// }
+buildReceipt();
 
 })();

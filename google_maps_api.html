@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #map-canvas {
+            height: 770px;
+            width: 481px;
+        }
+    </style>
+</head>
+<body>
+<h3>My Google Maps Demo</h3>
+<div id="map-canvas"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Kh8eEhfm84gnt6eqbhn5PPrsOoENp6A">
+</script>
+<script type ="text/javascript">
+        "use strict";
+    var map;
+    (function() {
+        var mapOptions = {
+            zoom: 19,
+            center: {
+                lat: 34.9485288,
+                lng: -120.4473257
+            },
+            mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+        var kays = {lat: 34.8652647, lng: -120.4477035};
+        var marker = new google.maps.Marker({
+            position: kays,
+            map: map
+
+        });
+    var address = "135 E Clark Ave, Orcutt, CA, 93455";
+        var geocoder = new google.maps.Geocoder();
+        geocoder.geocode({"address" : address}, function(results, status){
+            if(status == google.maps.GeocoderStatus.OK){
+                map.setCenter(results[0].geometry.location);
+            } else {
+                alert("Geocoding was not successful - STATUS:" + status);
+            }
+        });
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    })();
+
+</script>
+</body>
+</html>
