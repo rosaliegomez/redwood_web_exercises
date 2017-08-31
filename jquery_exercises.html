@@ -2,19 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jquery page</title>
 </head>
 <body>
+<div class="codeup">
+<h1 id="title">JQuery Exercise</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur consequuntur cupiditate dolorum fuga fugiat hic id inventore, minima molestiae obcaecati officiis quaerat quis quod, quos. Laudantium nesciunt sint suscipit?
+</p>
+<h2 class="codeup">Look at this list</h2>
+<ul id="">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+</ul>
+</div>
 
+<div id="codeup">
+    <h2 class="">Third Heading</h2>
+    <p id="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque deleniti dicta ducimus, eaque eveniet facere id inventore iste laudantium nemo placeat provident quia quis quo reprehenderit saepe sapiente suscipit tempore?
+    </p>
+</div>
 
 <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script>
     "use strict";
-    $(document).ready(function(){
-        alert("Hi");
-    });
+    (function (){
+        alert($("#title").html());
+    })();
+//    $('.codeup').css('border', '1px solid red');
+//    var contents = $('.codeup').html();
+//    alert(contents);
+//
+//    $('#listy').css('font-size', '20px');
+//
+//
+//    $('#highlight').css('background-color', 'yellow');
+
+$('li').css('font-size',"30px");
+$('h1, p, li').css('background-color', 'yellow');
+var contents = $('h1').html();
+alert(contents);
+
 </script>
 </body>
 </html>
