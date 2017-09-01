@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
+    "use strict";
+
+
+    (function () {
+        var code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+        var i = 0;
+        var body = $("body");
+
+        $(document).keyup(function (event) {
+            console.log(event.keyCode);
+
+            if (event.keyCode === code[i]) {
+                i++;
+                if (i == code.length) {
+                    $("body").css("background-image", "url(img/exorcist.jpg");
+                    $('body').css("background-size", '100%');
+                    $('body').css('background-repeat','no-repeat');
+                    $('h1').css('font-size', '50px');
+                    $('h1').html('30 LIVES ADDED!!');
+                    $('h1').css('color', 'white');
+
+                    i = 0;
+                }
+            } else {
+                console.log('Wrong Code!');
+                i = 0
+            }
+
+        });
+    })();
+
+
+</script>
+
+
+</body>
+</html>
