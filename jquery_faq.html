@@ -7,6 +7,11 @@
 </head>
 <body>
 
+<div id="heading">
+    <h1>Would you like to sign up for our newsletter?</h1>
+    <span id="x">X</span>
+</div>
+
 <h1>Facts about national parks</h1>
 <dl>
     <dt class="faqs">FAQ 1</dt>
@@ -133,24 +138,46 @@
         });
 
 
-
-        $('li').ready(function (){
-        $('#button').click(function(){
-            $('li').last().css("background-color", 'yellow');
+        $('li').ready(function () {
+            $('#button').click(function () {
+                $('li').last().css("background-color", 'yellow');
             })
         });
 
-        $("li").ready(function(){
-            $("h3").click(function(){
+        $("li").ready(function () {
+            $("h3").click(function () {
                 $(this).next().css("font-weight", "bold");
             })
         });
 
-        $('li').ready(function(){
-            $('li').click(function(){
+        $('li').ready(function () {
+            $('li').click(function () {
                 $(this).parent().children().first().css('color', 'blue');
             });
         });
+
+        $('#x').click(function () {
+            $('#heading').hide();
+        });
+
+
+        $('li').ready(function() {
+            $('li').hide();
+        });
+
+        $('h3').click(function(){
+            $(this).next().slideToggle();
+        });
+
+        $('h2').delay(8000).fadeIn(500);
+
+
+
+
+
+
+
+
 
     })();
 </script>
