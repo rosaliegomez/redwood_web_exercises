@@ -67,6 +67,52 @@
 
 </dl>
 <a href="" id="toggle">show</a>
+
+<ul class="listy">
+    <h3 class="title">Yellowstone National Park</h3>
+    <li>Yellowstone National Park is named after the Yellowstone River, the major river running through the park. According to French-Canadian trappers in the 1800s, they asked the name of the river from the Minnetaree tribe, who live in what is now eastern Montana. They responded “Mi tse a-da-zi,” which literally translates as “Rock Yellow River.” The trappers translated this into French as “Roche Jaune” or “Pierre Jaune.” In 1797, explorer-geographer David Thompson used the English translation—“Yellow Stone.” Lewis and Clark called the Yellowstone River by the French and English forms. Subsequent use formalized the name as “Yellowstone.
+    </li>
+    <li>No. More than half of Alaska’s national park units are larger, including Wrangell–St. Elias National Park and Preserve, which is the largest unit (13 million acres) in the National Park System. Until 1994, Yellowstone (at 2.2 million acres) was the largest national park in the contiguous United States. That year Death Valley National Monument was expanded and became a national park—it has more than 3 million acres.
+    </li>
+    <li>
+        Yellowstone is in the top five national parks for number of recreational visitors. Great Smoky Mountains National Park often has the most. Visit https://irma.nps.gov/Stats/ to view up-to-date statistics for all national parks.
+    </li>
+    <li>
+        Approximately 773 people work for the National Park Service during the peak summer season. Approximately 330 are permanent, year-round employees. Park rangers work in education, resource management, law enforcement, emergency medical services, and backcountry operations. Other employees specialize in research, maintenance, management, administration, trail maintenance, fire management, and fee collection.
+    </li>
+
+</ul>
+
+<ul class="listy">
+    <h3 class="title">Grand Canyon National Park</h3>
+    <li>At the South Rim, near Grand Canyon Village, it's a vertical mile (about 5,000 feet / 1524 m) from rim to river (7 miles / 11.3 km by trail, if you're walking). At its deepest, it is 6000 vertical feet / 1829 m from rim to river. The width of the canyon at Grand Canyon Village is 10 miles / 16 km (rim to rim), though in places it is as much as 18 miles / 29 km wide.
+    </li>
+    <li>Grand Canyonis unmatched throughout the world in the incomparable vistas it offers to visitors on the rim. It is not the deepest canyon in the world (both the Barranca del Cobre in northern Mexico and Hell's Canyon in Idaho are deeper, just to name two), but the Grand Canyon is known throughout the world for its overwhelming size and its intricate and colorful landscape. Geologically it is significant because of the thick sequence of ancient rocks that are beautifully preserved and exposed in the walls of the canyon. These rock layers record much of the early geological history of the North American continent. Finally, it is one of the most spectacular examples of erosion in the world.
+    </li>
+    <li>
+        The SOUTH RIM allows you several options. Common driving routes are from Williams, Arizona (via State Route 64 from Interstate 40) or Flagstaff (via US Highway 180). View detailed driving information here. Commercial airlines serve Phoenix, Flagstaff, and Las Vegas. There is limited air service into Grand Canyon Airport from Las Vegas and elsewhere. Greyhound provides bus service to Flagstaff, and public bus transportation is available from Flagstaff to the South Rim. Amtrak provides rail service to Flagstaff with connecting bus service to the canyon. Grand Canyon Railway offers vintage train service from Williams.
+    </li>
+    <li>
+        Expect heavy crowds during spring, summer, and fall months. You will find fewer crowds in the early spring or late fall. The South Rim is open year round, but heavy snows close the road to the North Rim from late October to mid May of each year. (top of page)
+    </li>
+
+</ul>
+
+<ul class="listy">
+    <h3 class="title">Zion National Park</h3>
+    <li>Before it was a national park, Zion was a national monument, and it’s name wasn’t Zion. The park was first protected in 1909 when President William Howard Taft designated Mukuntuweap National Monument using the power of the 1906 Antiquities Act. In the 10 years until it became a national park, it was expanded, and its name was changed to Zion. Today, Zion preserves 229 square miles of red rock landscape that’s so stunning it looks surreal. Photo taken from the Grotto by Tom Morris (www.sharetheexperience.org).
+    </li>
+    <li>People have called the canyons and plateaus of Zion National Park home for over 10,000 years. The remnants of their time here exist throughout the park. From humble granaries to improbable highways, these structures stand as testaments to the ingenuity of those that came before us. Photo by National Park Service.
+    </li>
+    <li> Zion Canyon is continually changing. The Virgin River and its tributaries run through Zion, carving and shaping the canyon. On average, the Virgin River removes 1 million tons of sediment, which mostly occurs during flash floods. The result: The canyon continues to widen and the river channel continues to deepen. Photo of The Narrows by Kevin Roland (www.sharetheexperience.org).
+    </li>
+    <li> Zion is a climber’s paradise. Zion National Park's 2,000-foot sandstone cliffs are world renowned for their big wall climbs. The best conditions for climbing are from March through May and September through early November. Photo of rock climbers exploring Zion's vertical world by National Park Service.
+    </li>
+
+</ul>
+
+<button id="button">highlight, please</button>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script>
     "use strict";
@@ -85,6 +131,27 @@
             $("dt").css('background-color', 'transparent');
             $(this).css('background-color', 'yellow');
         });
+
+
+
+        $('li').ready(function (){
+        $('#button').click(function(){
+            $('li').last().css("background-color", 'yellow');
+            })
+        });
+
+        $("li").ready(function(){
+            $("h3").click(function(){
+                $(this).next().css("font-weight", "bold");
+            })
+        });
+
+        $('li').ready(function(){
+            $('li').click(function(){
+                $(this).parent().children().first().css('color', 'blue');
+            });
+        });
+
     })();
 </script>
 
